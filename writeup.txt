@@ -1,0 +1,71 @@
+Braille Auto-Correct and Suggestion System – Write-Up
+------------------------------------------------------
+
+👤 Candidate: Mangali Bhavya  
+🧠 Task: Thinkerbell Labs – Braille Auto-Correct System  
+🛠️ Tools Used: Python 3, VS Code, Levenshtein Library  
+
+------------------------------------------------------
+
+🔍 Problem Understanding:
+Visually impaired users type Braille using specific QWERTY keys (D, W, Q, K, O, P) where multiple keys are pressed to form a Braille character.
+
+Due to human error, wrong key combinations can happen. So we built an auto-correct system that:
+1. Accepts user-entered Braille characters.
+2. Suggests the closest valid words from a dictionary.
+3. Corrects missing, extra, or wrong keys.
+4. Works efficiently even with large word lists.
+
+------------------------------------------------------
+
+🧑‍💻 Approach:
+- Each English letter was mapped to its corresponding QWERTY Braille pattern (e.g., 'c' = D,K).
+- User inputs were collected character-by-character as sets of keys.
+- The input was converted into a Braille sequence.
+- We compared the user sequence to dictionary words using "Levenshtein distance" to find the closest matches.
+- Top 5 suggestions were shown based on score (lower = better).
+
+------------------------------------------------------
+
+📦 Tech Details:
+- Python was used for implementation.
+- We used `Levenshtein` library for efficient distance calculation.
+- A dictionary of sample words was stored in `dictionary.txt`.
+- The mappings of each alphabet to Braille dot combinations were stored in `braille_mapping.py`.
+
+------------------------------------------------------
+
+✅ Sample Input:
+D,K → c
+D → a
+D,W → b
+done
+
+✅ Expected Output:
+Top Suggestions:
+cab (score: 0)
+cap (score: 10)
+cat (score: 11)
+
+
+------------------------------------------------------
+
+📈 Efficiency:
+- The code works in real-time for small and mid-sized dictionaries.
+- Can be scaled using Trie or hash-based indexing for larger dictionaries.
+
+------------------------------------------------------
+
+✨ Future Improvements (Bonus Ideas):
+- Add support for multiple languages (e.g., Hindi Braille).
+- Implement a machine learning model to learn user mistakes.
+- Add Braille contractions and compound handling.
+
+------------------------------------------------------
+
+📧 Contact:
+Sahil Tariq  
+Email: ruhaansahil4361@gmail.com  
+Phone: +91 7051654380  
+LinkedIn: www.linkedin.com/in/sahil-tariq-4602861a7  
+GitHub: https://github.com/Sahiltariq

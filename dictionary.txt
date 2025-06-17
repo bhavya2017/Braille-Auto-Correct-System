@@ -1,0 +1,11 @@
+hello
+help
+apple
+cat
+cab
+bat
+dog
+dot
+cap
+cup
+cut
