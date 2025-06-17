@@ -1,4 +1,4 @@
-## 📌 LinkedIn https://www.linkedin.com/in/bhavya-m-945767226/
+#📌 LinkedIn https://www.linkedin.com/in/bhavya-m-945767226/
 
 # 🔠 Braille Auto-Correct and Suggestion System
 
